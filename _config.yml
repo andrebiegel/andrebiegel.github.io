@@ -13,20 +13,26 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Andre´s Blog
-email: morpheusandrel@web.de
+title: Andre´s GitHub Projects
+email: morpheusandre@web.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Architect
+  as a Software Architect working primary in the java enviroment at daytime, i´m always seeking towards showing how issues can be avoided. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: BiegelAndre
-github_username:  andrebiegel
-
+show_excerpts: false # set to true to show excerpts on the homepage
+minima:
+  date_format: "%b %-d, %Y"
+  # generate social links in footer
+  social_links:
+    twitter: BiegelAndre
+    github:  andrebiegel
+    linkedin: andré-biegel-756529156
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-feed
+ - jekyll-feed
+ - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
