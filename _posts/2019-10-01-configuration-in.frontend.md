@@ -1,8 +1,9 @@
 ---
-
 layout: post
 date:   2019-10-01 22:00:00 +0200
 title:  "Web Development: Configuration in UI: Experiences from an integration perspective"
+categories: [Blog]
+tags: [frontend-development, configuration ]
 ---
 This lenghty one tries to translate backend guidelines in configuration handling towards frontend development.. feel free to discuss or rant at...
 
