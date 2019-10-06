@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lifeay Plugins Collections
+title: Liferay Plugins Collections
 categories: [Projects]
 tags: [Liferay DXP , OSDI, Samples, Portal-Actions, Extensions]
 date:   2019-10-06
