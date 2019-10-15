@@ -7,5 +7,5 @@ tags: [frontend-development, configuration, Web-Components, JavaScript ]
 ---
 
 As as consequence of my posts x & and y, the following idea came into my mind..why not using the markup language itself as fundament of configurations provider.
-The possibilities to use SSE will ESI garanties integration sceanrios for self-contained-systems (SCS), PWAs and other SPA-like solutions. 
+The possibilities to use SSE & ESI garanties integration sceanrios for self-contained-systems (SCS), PWAs and other SPA-like solutions. 
 
