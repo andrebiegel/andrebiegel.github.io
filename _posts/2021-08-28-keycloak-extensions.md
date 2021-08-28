@@ -82,7 +82,7 @@ public class CustomRealmResourceProvider implements RealmResourceProvider {
 
 The Resource Class itself can use the standard Jax-rs annotations/features, but you should not assume that everything is working as it should. For example, I wasn´t able to use @RolesAllowed or SecurityContext out of the box as it should be. The following demonstrates the response of my sample.
 
- ![alt text](https://github.com/andrebiegel/keycloak-samples/tree/master/images/rest-result.png "Access Token Content")
+ ![alt text](https://raw.githubusercontent.com/andrebiegel/keycloak-samples/master/images/rest-result.png "Access Token Content")
 
 The next extension is the protocol mapper. Such mapper has the goal to map information into the token. The following sample is an open id connect protocol mapper adding a custom claim into access, Id, or user info token.
 
@@ -135,7 +135,7 @@ public class CustomProtocollMapper extends AbstractOIDCProtocolMapper
 ```
 
 The Result can be seen in the retrieved token:
-![alt text](https://github.com/andrebiegel/keycloak-samples/tree/master/images/sampletoken.png "Access Token Cotent")
+![alt text](https://raw.githubusercontent.com/andrebiegel/keycloak-samples/master/images/sampletoken.png)
 
 So in the end, the extensions themselves are not that scary and even after the NullPointer bug-hunting, it feels quite well, to have done something functioning... I would recommend using the Jax-rs endpoint as a way to extend keycloak basis functionality, maybe as a type of orchestration layer. But please add only the functionality which originally belongs to your IAM domain!
 
