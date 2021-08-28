@@ -82,8 +82,7 @@ public class CustomRealmResourceProvider implements RealmResourceProvider {
 
 The Resource Class itself can use the standard Jax-rs annotations/features, but you should not assume that everything is working as it should. For example, I wasn´t able to use @RolesAllowed or SecurityContext out of the box as it should be. The following demonstrates the response of my sample.
 
- ![alt text](.
- https://github.com/andrebiegel/keycloak-samples/tree/master/images/rest-result.png "Access Token Content")
+ ![alt text](https://github.com/andrebiegel/keycloak-samples/tree/master/images/rest-result.png "Access Token Content")
 
 The next extension is the protocol mapper. Such mapper has the goal to map information into the token. The following sample is an open id connect protocol mapper adding a custom claim into access, Id, or user info token.
 
