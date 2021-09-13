@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Andre´s GitHub Projects
+title: André Biegel
 email: morpheusandre@web.de
 description: >- # this means to ignore newlines until "baseurl:"
   as a Software Architect working primary in the java enviroment at daytime, i´m always seeking towards showing how issues can be avoided. 
