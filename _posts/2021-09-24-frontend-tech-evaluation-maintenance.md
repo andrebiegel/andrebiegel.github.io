@@ -34,6 +34,7 @@ But can you take this as the result and recommend react for your spa projects? I
 
 In the end, there is very much to consider before using new technologies in projects. But as a starting point, I would suggest React. From an overall non functional perpective and in my context of consulting in projects for individual software solutions; it seems to fit pretty well. 
 
+Have you anything to adjust or do have an other result? Just twitter me with #spacomparison
 
 ## Sources
 
