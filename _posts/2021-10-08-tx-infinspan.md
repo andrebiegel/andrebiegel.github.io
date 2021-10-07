@@ -19,4 +19,4 @@ Do you agree? just twitter me (#txinfinispan)...
 ## Sources
 
 * Infinispan https://infinispan.org/
-* Issue : https://issues.redhat.com/browse/ISPN-13173
+* Issue: https://issues.redhat.com/browse/ISPN-13173
