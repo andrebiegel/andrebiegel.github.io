@@ -25,13 +25,21 @@ So now let's switch from the operational perspective towards development.
 Here independence of micro-services is created by suppressing cross-service changes. These kinds of changes symbolize inter-service dependencies, which would end up in a distributed monolith. The state of the art methodology of suppressing cross-module changes (the services is the modularization layer of the pattern) is creating low coupling and high cohesion by using business domains as the unit for modularization. The common technique for creating this kind of module is Domain Driven Design. The accepted rationale is that changes will be more likely inside of a domain than through several business domains
 the communication through networks is finally empowering a microservice to be able to choose the process model as its scaling methodology. This in turn allows to easily increase the instances by starting new processes.
 After explaining the technical dimension of the pattern, we are going to highlight the organisational dimension. If an organization needs to scale, the overhead in coordination and communication will, unfortunately, grow over time, Applying the pattern means creating cross-functional teams and promoting team autonomy. This reduces the disadvantages and limits them to situations where cross-module changes occur. In Scale, this inherently leads to towards a shift of the operational ownership of the microservice to the team, because, as more services do exist, there will be a time when the operational capacities will be exhausted. This is going to be more likely when taking into account that the technical dimension of the pattern allows using more technology stacks. Because it theoretically enables the team to optimize the stack towards the problem the micro-service is going to solve.
-Another consequence of introducing an MSA is that the cost of bringing something into production is crucial. To optimize this aspect an adequate amount of investment has to be done in automation (in CI/CD & resource allocation). A common way to achieve this is by using containers as the base for all services.
+Another consequence of introducing an MSA is that the cost of bringing something into production is crucial. To optimize this aspect an adequate amount of investment has to be done in automation (in CI/CD & resource allocation via self-services ). A common way to achieve this is by using containers as the base for all services.
+
+Of course, MSA can provide a few benefits more. Because when the cost to introduce features is quite low (by the means that only needed parts have to be changed and tested and nothing more) it can result in a reduced time to market. Otherwise, when using the process model to scale, it will allow scaling the application in a cost-effective way. 
+
+
 So hopefully everybody now has a clear view of what an MSA really is. In the end, it is a distributed system and these kinds of systems do have their challenges, which should be considered first. I like to sort the challenges into three categories.
 
  
-* technical challenges: regarding distribution in dimensions of development & monitoring 
-* organisational challenges: regarding the creating the team structure
-* cultural challenges: regarding empowering the teams to live their new autonomy ("With great power comes great responsibility" )
+* technical challenges: regarding distribution in dimensions of development,logging, tracing, monitoring,operations
+* organisational challenges:  regarding the creating the team structure,transfering service-ownership 
+* cultural challenges: empowering the teams to live their new autonomy ("With great power comes great responsibility" ), transfering service-ownership
+
+In the next part of my MSA series, i will try answer the question regarding when an MSA is good choice. 
+
+Is anything left open ? Just twitter me and we will find a solution ..  @BiegelAndre #msapart1
  
 
 
