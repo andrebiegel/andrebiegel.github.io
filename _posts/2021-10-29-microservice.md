@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Micro-Services Part 1 - What do they solve ?
+title: Micro-Services Part 1 - What does it solve ?
 categories: [Blog]
-tags: [microservices ]
-date:   2021-11-01
+tags: [microservices, architecture, design, pattern ]
+date:   2021-10-29
 
 ---
 It´s time that the hype of microservices has reached the sector I´m working in. Technically I would like to embrace that. Unfortunately, I do often see that the hype has fogged what´s really behind that. So here I try to lift the fog.
