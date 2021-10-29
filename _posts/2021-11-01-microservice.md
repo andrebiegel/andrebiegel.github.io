@@ -37,9 +37,10 @@ So hopefully everybody now has a clear view of what an MSA really is. In the end
 * organisational challenges:  regarding the creating the team structure,transfering service-ownership 
 * cultural challenges: empowering the teams to live their new autonomy ("With great power comes great responsibility" ), transfering service-ownership
 
-In the next part of my MSA series, i will try answer the question regarding when an MSA is good choice. 
+In the next part of my MSA series, I will try to answer the question regarding when an MSA is a good choice.
 
-Is anything left open ? Just twitter me and we will find a solution ..  @BiegelAndre #msapart1
+
+Is anything left open? Just twitter me and we will find a solution .. @BiegelAndre #msapart1
  
 
 
