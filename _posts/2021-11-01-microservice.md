@@ -8,7 +8,7 @@ date:   2021-11-01
 ---
 It´s time that the hype of microservices has reached the sector I´m working in. Technically I would like to embrace that. Unfortunately, I do often see that the hype has fogged what´s really behind that. So here I try to lift the fog.
 
-A microservice architecture (MSA) is a pattern, which tries to solve a problem. The issue it addresses is scaling. The pattern uses modularization on a "micro-application level" to achieve that. Before we try to investigate the dimensions the pattern has effects on, we deduce that from the definition Sam Newman gave.
+A microservice architecture (MSA) is a pattern, which tries to solve a problem. The issue it mainly addresses is scaling. The pattern uses modularization on a "micro-application level" to achieve that. Before we try to investigate the dimensions the pattern has effects on, we deduce that from the definition Sam Newman gave.
 
 >  Microservices are independently deployable services modelled around a business domain. They communicate with each other via networks...
 >
