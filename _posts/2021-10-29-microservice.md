@@ -18,6 +18,7 @@ A microservice architecture (MSA) is a pattern, which tries to solve a problem. 
 + independent deployability
 + modelled around a business domain
 + communicating through networks (in other definitions even declared as "with standard protocols")
+
 The basic principle, these properties have been derived from, is divide & conquer. If you have a scaling problem within your application, you should identify the part and work on that. When using the horizontal scaling approach, you need to increase the instances it is running on. To increase the number of instances, you need to have the opportunity to deploy the services (the parts which need to scale).
 But where does the requirement of independence come from? 
 The reason for this is the need to be able to scale an MSA itself. Because if an application is going to be torn into several parts and these parts form a deployment monolith, the resulting costs in coordination & communication will rise exponentially with an increasing number of micro-services. When creating independently deployable services, this contention risk can be solved. 
