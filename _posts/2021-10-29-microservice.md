@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Micro-Services Part 1 - What does it solve ?
+title: Microservices Part 1 - What does it solve ?
 categories: [Blog]
 tags: [microservices, architecture, design, pattern ]
 date:   2021-10-29
