@@ -6,16 +6,37 @@ tags: [microservices, architecture, design, pattern ]
 date:   2021-11-10
 
 ---
- In part 1 of the series digged into the question, what a microservice architecture really is and what kind of properties and consequences it has. I assume this fundamental understanding and will now deduce from that, who, from a general point of view, should   be cautious when evaluating a microservice archetecture for him/herself.
+ In part 1 of the series,I digged into the question, what a microservice architecture really is and what kind of properties and consequences it has. I assume this fundamental understanding and will now deduce from that, who, from a general point of view, should   be cautious when evaluating a microservice archetecture for him/herself.
 
 Just to have a short summary of the important things so far: 
 
-+ microservices should be be independently deployable
++ microservices should be independently deployable
 + microservices are modelled around a business domain
 + microservices communicate over networks
 + result in technical, organisational & cultural challenges 
 
-So from general point of view .. when might be your plan of a distributed system  not the rigth choice ? One simple anwser is ..every time when the challenges cannot be faced the rigth way.  A possible example is costumer-managed software. Just think about the following.. a costumer received several versions as a simple web archiv file (War) und just needs to deploy that or uses an simple zip to extract a preconfigured application-server. Imagine the reactions if the costumers downloads a ton of new service runtimes and a huge documentation about how to install that thing. i would forecast that the it department of the customer migth have some issues about that. The same can be transferred towards a situation in the context of a project for individual software (WORT prüfen). If the service provider creates a solution running on a container plattform and the costumer does not have any experiences with that, the solution seems to be ill-fated.
+So from a general point of view .. when might be your plan of a distributed system not the rigth choice ? One simple anwser is ..every time when the challenges cannot be faced the rigth way.  A possible example is costumer-managed software. Just think about the following.
+A costumer received several versions as a simple web archive file (WAR) und just needed to deploy that or used an simple ZIP to extract a preconfigured application-server. Imagine the reactions if the costumer downloads tons of new service runtimes and a huge documentation about how to install that thing. i would forecast that the it department of the customer migth have some issues about that. The same can be transferred towards a situation in the context of a project for individual software (WORT prüfen). If the service provider creates a solution running on a container plattform and the costumer does not have any experiences with that, the solution seems to be ill-fated.
+Another problem arrises when using the approach in an environment, where the business domains cannot be clearly identified. Every product evolves. Especially in a startup context when the product is trying to open up a market. The normal process would be that the startup will test which features are demanded and which not. So the business domain and the resulting bounded contexts are in a state of self-discovery. In such a situation, does it look like a good strategy to accept the challenges, instead of using a monolithic approach whith a corresponding faster time-to-market? 
+I personally do have a similiar situation quite often. A client has a vague vision of a system in the context of process digitalization or wants to expand their product portfolio. Nowadays the idea of microservices is actually extremely spread in the minds of the stakeholders. This often leads towards a technical decision up-frond. Unfortunately these clients are extremely hard to lead back torwards a system architecture which addresses the actual needs. Yes if the idea will bring them a huge number of customers, a mircroservice architecture, migth be the right choice. But is this the right decision at the current point in time? Have these customers feedback whether the idea is really working ? Or is the functioncal alignment going to be shifted towards the enduser, which is actually willingly paying for the new service or product ? Can this only be evaluated during being in production with a MVP/ prototype or does the customer has enough information to decide that up-front?
+You might get the clue that .. YES i do love technical challenges ... but in the end ... does it provide value/ROI ?  
+You migth remember my words in the last part of this series .. mircroservices do solve a problem. Do you have a problem? Do you have a good reason, despite of being trendy?
+
+From my personal experience, i do hear the following:
+
++ We want to enhance maintainability of the system, MSA will allow us to separate parts and will minimize changes in the hole system
++ we want to reduce time-to-market, MSA will allow us to bring new features faster by just adding new mircoservices
++ we would like to improve team autonomy: with a MSA we can move ownership into teams
++ with a MSA we can scale cost-effectively
++ we need MSA because we need to scale our developers
++ we need to enhance robustness .. MSA is the rigth way to do that
++ we need to embrace new technologies .. MSA allow us  try dem out in manner to be able to have fast rollbacks
+
+Do not misunderstand me, all of these can be good reasons to do microservices. but will it be the right choice for you in your context? 
+
+The very often mentioned maintainability mainly adresses an issue of the modularization of your application. A Modulith/ modular Monolith can be a better solution.
+ 
+
 
 ## Sources:
 
