@@ -6,7 +6,7 @@ tags: [microservices, architecture, design, pattern ]
 date:   2021-11-10
 
 ---
- In part 1 of the series,I digged into the question, what a microservice architecture really is and what kind of properties and consequences it has. I assume this fundamental understanding and will now deduce from that, who, from a general point of view, should   be cautious when evaluating a microservice archetecture for him/herself.
+ In part 1 of the series,I digged into the question, what a microservice architecture really is and what kind of properties and consequences it has. I assume this fundamental understanding and will now follow up the matter about, who, from a general point of view, should be cautious when evaluating a microservice archetecture for him/herself.
 
 Just to have a short summary of the important things so far: 
 
@@ -33,12 +33,24 @@ From my personal experience, i do hear the following:
 + we need to embrace new technologies .. MSA allow us  try dem out in manner to be able to have fast rollbacks
 
 Do not misunderstand me, all of these can be good reasons to do microservices. but will it be the right choice for you in your context? 
+The already mentioned reasons can also be adressed alternatively. Have you also evaluated these solutions ? 
 
-The very often mentioned maintainability mainly adresses an issue of the modularization of your application. A Modulith/ modular Monolith can be a better solution.
- 
+* The very often mentioned maintainability mainly adresses an issue of the modularization of your application. A Modulith/ modular Monolith can be a better solution.
+* reduce time to market -- analyse the complete software development lifecycle; maybe the bottleneck is not the development, may be requirement engineering ?  
+* team autonomy: another approaches of bringing responsibility to the tean can be .. using a modular monolith as a direct technical strategy regarding a part of the business domain or another way would be the declaration of specific technical decision-makers (for UI, DB ... ). Or try to reduce dependencies upon the operations team by provoding self service approaches for the provisioning ? 
+* instead of scaling the application pieces, a vertical scaling for hole application can be a starting point. Or horizontal with classic load balancer, or replace technology with better one
+* To tackle needed robustness  you could just run the app behind a load balancer. 
+* scale devevlopers. Try a modulith
+* The need to use new technologies can also addressed by using polyglot environmments.
 
 
-## Sources:
+I hope you get the point. Microservices are not the silverbullet. And you probably are not the best match like a scale-up. A business with a clear domains and a rising number of customers.
+
+The mext part will then try to give a vision of how  microservices can be introduced. 
+
+
+
+## Sources: 
 
 * Sam Newman :Monolith to Microservices
 
