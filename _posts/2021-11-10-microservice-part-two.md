@@ -40,6 +40,7 @@ Do not misunderstand me, all of these can be good reasons to do microservices. b
 
 
 I hope you get the point. Microservices are not the silver bullet. And you probably are not the best match like a scale-up. A business with clear domains and a rising number of customers.
+What do we learn from ebay, amazon, twitter and netflix ? Microservices are a evolutionary step in the life of an application and it is one of the last ones!
 
 The mext part will then try to give a vision of how  microservices can be introduced. 
 
@@ -47,4 +48,6 @@ The mext part will then try to give a vision of how  microservices can be introd
 ## Sources: 
 
 * Sam Newman: Monolith to Microservices
+*  https://www.youtube.com/watch?v=E8-e-3fRHBw 
+*  https://www.youtube.com/watch?v=k01PHa5YDpQ
  
