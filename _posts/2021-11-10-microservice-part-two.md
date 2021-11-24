@@ -21,31 +21,30 @@ You might remember my words in the last part of this series .. microservices do 
 From my personal experience, I do hear the following:
 
 + We want to enhance the maintainability of the system, MSA will allow us to separate parts and will minimize changes in the whole system
-+ we want to reduce time-to-market, MSA will allow us to bring new features faster by just adding new mircoservices
-+ we would like to improve team autonomy: with a MSA we can move ownership into teams
-+ with a MSA we can scale cost-effectively
++ we want to reduce time-to-market, MSA will allow us to bring new features faster by just adding new microservices
++ we would like to improve team autonomy: with an MSA we can move ownership into teams
++ with an MSA we can scale cost-effectively
 + we need MSA because we need to scale our developers
-+ we need to enhance robustness .. MSA is the rigth way to do that
-+ we need to embrace new technologies .. MSA allow us  try dem out in manner to be able to have fast rollbacks
++ we need to enhance robustness .. MSA is the right way to do that
++ we need to embrace new technologies ..     MSA allows us to try them out in a manner to be able to have fast rollbacks
 
-Do not misunderstand me, all of these can be good reasons to do microservices. but will it be the right choice for you in your context? 
-The already mentioned reasons can also be adressed alternatively. Have you also evaluated these solutions ? 
+Do not misunderstand me, all of these can be good reasons to do microservices. but will it be the right choice for you in your context? The already mentioned reasons can also be addressed alternatively. Have you also evaluated these solutions?
 
-* The very often mentioned maintainability mainly adresses an issue of the modularization of your application. A Modulith/ modular Monolith can be a better solution.
-* reduce time to market -- analyse the complete software development lifecycle; maybe the bottleneck is not the development, may be requirement engineering ?  
-* team autonomy: another approaches of bringing responsibility to the tean can be .. using a modular monolith as a direct technical strategy regarding a part of the business domain or another way would be the declaration of specific technical decision-makers (for UI, DB ... ). Or try to reduce dependencies upon the operations team by provoding self service approaches for the provisioning ? 
-* instead of scaling the application pieces, a vertical scaling for hole application can be a starting point. Or horizontal scaling with classic load balancer, or replace technology with better one
+* The very often mentioned maintainability mainly addresses an issue within the modularization of your application. A Modulith/ modular Monolith can be a better solution.
+* reduce time to market -- analyze the complete software development lifecycle; maybe the bottleneck is not the development, maybe requirement engineering? 
+* team autonomy: another approach of bringing responsibility to the team can be .. using a modular monolith as a direct technical strategy regarding a part of the business domain or another way would be the declaration of specific technical decision-makers (for UI, DB ... ). Or try to reduce dependencies upon the operations team by providing self-service approaches for the provisioning?
+* instead of scaling the application pieces, vertical scaling for the whole application can be a starting point. Or horizontal scaling with classic load balancer, or replace technology with a better one
 * To tackle needed robustness  you could just run the app behind a load balancer. 
-* scale devevlopers. Try a modulith
-* The need to use new technologies can also addressed by using polyglot environmments.
+* scale developers. Try a modulith
+* The need to use new technologies can also be addressed by using polyglot environments.
 
 
-I hope you get the point. Microservices are not the silverbullet. And you probably are not the best match like a scale-up. A business with a clear domains and a rising number of customers.
+I hope you get the point. Microservices are not the silver bullet. And you probably are not the best match like a scale-up. A business with clear domains and a rising number of customers.
 
 The mext part will then try to give a vision of how  microservices can be introduced. 
 
 
 ## Sources: 
 
-* Sam Newman :Monolith to Microservices
+* Sam Newman: Monolith to Microservices
  
