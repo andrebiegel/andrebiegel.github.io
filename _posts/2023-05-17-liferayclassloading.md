@@ -3,7 +3,7 @@ layout: post
 title: Liferay - Shielded Classloading 
 categories: [Blog]
 tags: [web, dev, liferay, osgi, classloading]
-date:   2023-04-28
+date:   2023-05-17
 
 ---
 
