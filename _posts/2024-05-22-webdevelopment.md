@@ -11,7 +11,7 @@ Es ist wieder an der Zeit sich dem Thema der gegenwärtigen Entwicklung in der W
 Bevor wir uns jedoch dem gegenwärtigen Trend widmen wollen wir die Vergangenheit betrachten. 
 Wir aus
 
-```mermaid!
+```mermaid
 pie title Pets adopted by volunteers
   "Dogs" : 386
   "Cats" : 85
