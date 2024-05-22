@@ -44,7 +44,8 @@ Ein Beispiel mit Next wäre das folgende:
 * Enhanced Navigation (Enhanced Form Post): Reduktion des Reload Aufkommens bei Full-Page Requests, durch clientseitiges Ersetzen des Contents. 
 
 * Client Components: gezielte Ausführung Inhalten auf dem Client
- Ein Beispiel in Next.js 
+ Ein Beispiel in Next.js ist: 
+
 ```next
 'use client'
  
