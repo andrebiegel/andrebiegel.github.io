@@ -21,28 +21,51 @@ timeline
   section 2015 - 2022
     Modern Client Rendering (SPA) : React, Vue.js, Angular, Svelte
   section 2022
-    Server + Client Components : Next.js (React), Nuxt (Vue.js),, SvelteKit (Svelte), Blazor Astro,
+    Server + Client Components : Next.js (React), Nuxt (Vue.js),, SvelteKit (Svelte), Blazor (.Net), Astro,
 ```
-Es ist wieder an der Zeit sich dem Thema der gegenwärtigen Entwicklung in der Web Entwicklung zu widmen.
+Es ist wieder an der Zeit sich dem Thema der gegenwärtigen Entwicklung in der Web-Entwicklung zu widmen.
 Bevor wir uns jedoch dem gegenwärtigen Trend widmen wollen wir die Vergangenheit betrachten. 
-Wir beginnen mit den Anfängen der Web-Entwicklung. Zu der Zeit wurde HTML auf dem Server generiert und ausgeliefert. Frameworks wie etwa JSP , Django und Rails sind Vertreter solcher Strömungen. Danach wurden Anwendungen mit Javascript angereichert. Dies erfolgte, da die Javascript API in den Browsern noch sehr umständlich war in der Regel mit JQuery als Abstraktionsschicht darüber. Darauf folgend kamen erste Client Rendering Frameworks auf, welche mehr Strukturen unterstützen. Dadurch kam MVC and MVM ins Frontend. Die Anwendungen wuchsen noch mehr heran und diese Ansätze kamen an Ihre Grenzen.  Neuere Frameworks haben dann den Komponenten-Ansatz noch mehr inkludiert und dadurch entwickelten sich Vertreter wie etwa React udn Vue.js. Momentan sind die Anwendungen aber so groß, dass Performance Probleme auftreten und somit 
-kommt man nun auf die Idee die Anwendungen in Server und Client basierte Komponenten auf zu teilen. Ein populärer Vertreter ist Next.Js, welches auf React aufbaut. Dabei wird ein Großteil der Anwendungen wieder auf dem Server gerendert und als HTML als ausgeliefert. Nur kleine Komponenten, welche nur auf dem Client ausgeführt werden müssen, laufen dann auf dem Client. Dadurch sind die altbekannten Vorteile von statischem Content wieder nutzbar (Caching, SEO). Auch wird ein schnellerer First Load , eine Reduktion von Egress Kosten, eine bessere Kompatibilität vor allem mit Low-End Geräten, da nur HTML Rendering ausgeführt werden. Somit gewinnt der Begriff Progressive Enhancement wieder mehr an Bedeutung.      
+Wir beginnen mit den Anfängen der Web-Entwicklung. Zu der Zeit wurde HTML auf dem Server generiert und ausgeliefert. Frameworks wie etwa JSP , Django und Rails sind Vertreter solcher Strömungen. Danach wurden Anwendungen mit Javascript angereichert. Dies erfolgte, da die Javascript API in den Browsern noch sehr umständlich war in der Regel mit JQuery als Abstraktionsschicht darüber. Darauf folgend kamen erste Client Rendering Frameworks auf, welche mehr Strukturen unterstützen. Dadurch kam MVC and MVVM ins Frontend. Die Anwendungen wuchsen noch mehr heran und diese Ansätze kamen an ihre Grenzen. Neuere Frameworks haben dann den Komponenten-Ansatz noch mehr inkludiert und dadurch entwickelten sich Vertreter wie etwa React und Vue.js. Momentan sind die Anwendungen aber so groß, dass Performance Probleme auftreten und somit 
+kommt man nun auf die Idee die Anwendungen in Server und Client basierte Komponenten aufzuteilen. Ein populärer Vertreter ist Next.js, welches auf React aufbaut. Dabei wird ein Großteil der Anwendungen wieder auf dem Server gerendert und als HTML als ausgeliefert. Nur kleine Komponenten, welche nur auf dem Client ausgeführt werden müssen, laufen dann auf dem Client. Dadurch sind die altbekannten Vorteile von statischem Content wieder nutzbar (Caching, SEO). Auch wird ein schnellerer First Load, eine Reduktion von Egress Kosten, eine bessere Kompatibilität vor allem mit Low-End Geräten, da nur HTML Rendering ausgeführt werden, erreicht. Auch gewinnt der Begriff Progressive Enhancement wieder mehr an Bedeutung.      
 
-Diese neueren Framework bieten folgende Funktionen an:  
+Diese neueren Frameworks bieten folgende Funktionen an:  
 
 
 * Server Side Rendering: Das Rendern auf dem Server und das Ausliefern bloßer HTML Inhalte.
 
-* Streaming Server Side Rendering :
+* Streaming Server Side Rendering: Rendering der groben Seitenstruktur, aufwendige Teile werden später eingefügt. 
 
-* Extensive Diagram Types:
+Ein Beispiel mit Next wäre das folgende:
+```next
+<Suspense fallback={<Loading/>}
+ <HeavyComponent>
+</Suspense> 
+```
+* Enhanced Navigation (Enhanced Form Post): Reduktion des Reload Aufkommens bei Full-Page Requests, durch clientseitiges Ersetzen des Contents. 
 
-* Integration of C4 Model:
+* Client Components: gezielte Ausführung Inhalten auf dem Client
+ Ein Beispiel in Next.js 
+```next
+'use client'
+ 
+import { useState } from 'react'
+ 
+export default function Counter() {
+  const [count, setCount] = useState(0)
+ 
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  )
+}
+```
 
-* Use of Sprites:
+Mit diesen Funktionen wird es möglich eine leichtgewichtige Benutzer-Experience u entwerfen , ohne die modernen UI Frameworks zu verlassen. 
 
-Conclusion:
-PlantUML provides a simple, platform-independent, and comprehensive approach to describing software architectures. With
-its text-based syntax, integration of the C4 model, and the option to use sprites, PlantUML opens up new possibilities
-for developers to accurately describe and effectively communicate complex software architectures. By visualizing the
-architecture in diagrams, collaboration among team members is improved, and potential issues can be identified early on.
+
+Quellen/ Sources : 
+Next Js. Streaming SSR: https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
+Next Js Navigation: https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
+https://www.youtube.com/watch?v=p9taQkF24Fs&t=3468s
