@@ -107,6 +107,6 @@ export default function Counter() {
 With these features, it is possible to design a lightweight user experience without leaving modern UI frameworks.
 
 Quellen/ Sources : 
-Next Js. Streaming SSR: https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
-Next Js Navigation: https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
-https://www.youtube.com/watch?v=p9taQkF24Fs&t=3468s
+* Next Js. Streaming SSR: https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
+* Next Js Navigation: https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
+* https://www.youtube.com/watch?v=p9taQkF24Fs&t=3468s
