@@ -62,7 +62,8 @@ export default function Counter() {
 }
 ```
 
-Mit diesen Funktionen wird es möglich eine leichtgewichtige Benutzer-Experience zu entwerfen , ohne die modernen UI Frameworks zu verlassen. 
+Mit diesen Funktionen wird es möglich eine leichtgewichtige Benutzer-Experience zu entwerfen, ohne die modernen UI Frameworks zu verlassen. Die Größe des Client seitigen Codes lässt sich dadurch massiv reduzieren und bekannte Architektur Muster aus dem serverseitigen Anwendungen wieder verwenden. 
+Ich persönlich sehe somit eine Abkehr von dem reinen client seitigen Trend in der Web-Entwicklung und eine Verschiebung in die Mitte. Es bleibt somit spannend, welche Probleme mit dieser Art und Weise in den nächsten Jahren auftreten werden.
 
 English:
 
