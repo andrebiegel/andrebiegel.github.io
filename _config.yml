@@ -14,9 +14,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: André Biegel
-email: morpheusandre@web.de
+email: andre.biegel@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  as a Software Architect working primary in the java enviroment at daytime, i´m always seeking towards showing how issues can be avoided. 
+  as a Software Architect working primary in the java enviroment at daytime, i´m always seeking towards showing how issues can be avoided.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 show_excerpts: false # set to true to show excerpts on the homepage
@@ -33,6 +33,7 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-spaceship
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
