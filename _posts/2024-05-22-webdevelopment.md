@@ -30,7 +30,6 @@ kommt man nun auf die Idee die Anwendungen in Server und Client basierte Kompone
 
 Diese neueren Frameworks bieten folgende Funktionen an:  
 
-
 * Server Side Rendering: Das Rendern auf dem Server und das Ausliefern bloßer HTML Inhalte.
 
 * Streaming Server Side Rendering: Rendering der groben Seitenstruktur, aufwendige Teile werden später eingefügt. 
@@ -63,9 +62,47 @@ export default function Counter() {
 }
 ```
 
-Mit diesen Funktionen wird es möglich eine leichtgewichtige Benutzer-Experience u entwerfen , ohne die modernen UI Frameworks zu verlassen. 
+Mit diesen Funktionen wird es möglich eine leichtgewichtige Benutzer-Experience zu entwerfen , ohne die modernen UI Frameworks zu verlassen. 
 
+English:
+It's time again to address the topic of the current development in web development.
+Before we turn to the current trend, we want to look at the past.
+We start with the beginnings of web development. At that time, HTML was generated and delivered from the server. Frameworks such as JSP, Django, and Rails are representatives of such trends. Then, applications were enriched with Javascript. This was done because the Javascript API in browsers was still very cumbersome, usually with JQuery as an abstraction layer. Subsequently, the first client rendering frameworks emerged, which supported more structures. This brought MVC and MVVM to the frontend. The applications grew even more, and these approaches reached their limits. Newer frameworks then included the component approach even more, leading to representatives such as React and Vue.js. Currently, however, applications are so large that performance issues arise, and thus the idea now is to split the applications into server and client-based components. A popular representative is Next.js, which is based on React. Here, a large part of the applications is rendered on the server and delivered as HTML. Only small components that need to be executed only on the client run on the client. This allows the well-known advantages of static content (caching, SEO) to be utilized again. A faster first load, a reduction in egress costs, and better compatibility, especially with low-end devices, as only HTML rendering is performed, are also achieved. The term Progressive Enhancement is also gaining more importance again.
 
+These newer frameworks offer the following features:
+
+* Server Side Rendering (SSR): Rendering on the server and delivering plain HTML content.
+
+* Streaming Server Side Rendering (SSR): Rendering the rough page structure, with complex parts being inserted later.
+
+An example with Next.js would be the following:
+```next
+<Suspense fallback={<Loading/>}
+ <HeavyComponent>
+</Suspense> 
+```
+* Enhanced Navigation (Enhanced Form Post): Reducing the occurrence of reloads on full-page requests by replacing content on the client side.
+
+* Client Components: Targeted execution of content on the client side.
+
+An example in Next.js is:
+
+```next
+'use client'
+ 
+import { useState } from 'react'
+ 
+export default function Counter() {
+  const [count, setCount] = useState(0)
+ 
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  )
+}
+```
 Quellen/ Sources : 
 Next Js. Streaming SSR: https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming
 Next Js Navigation: https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
