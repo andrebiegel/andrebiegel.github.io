@@ -1,4 +1,12 @@
-# The Liferay Configuration Framework - The hidden gems   
+---
+layout: post
+title: The Liferay Configuration Framework - The hidden gems 
+categories: [Blog]
+tags: [Liferay, OSGI , BND, Configuration Framework, DXP 7.4.0, 2026.q1.7]
+date:   2026-06-09
+---
+
+#    
 
 The liferay configuration framework is a framework that allows you to configure liferay applications via osgi mechanisms. It is a very traditional development approach and provides integration in the settings ui of liferay. 100% Java-based. In my GitHub repository I provided a few examples a few years ago. Last week a customer of mine asked me about how to do configuration for a classical java osgi service. That was one of these situations where I was able to provide a link to my repo and say there is everything you need. But when I was looking through the repository, I recognized that the code I provided was quite old and needs some additional work to be up to date. 
 
@@ -179,6 +187,3 @@ The last thing I want to mention is the possibility to use the osgi spec configu
 * https://www.clayui.com/docs/components/icon
 * https://learn.liferay.com/kb-article/how-to-use-environment-variables-for-passwords-within-osgi-config-files
 * https://github.com/apache/felix-dev/tree/master/configadmin-plugins/interpolation
-
-Keywords: Liferay, OSGI , BND, Configuration Framework , DXP 7.4.0, 2026.q1.7
-
